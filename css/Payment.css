@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+/* // navbarvigetion // */
+
+nav {
+  width: 15%;
+  height: 100vh;
+  background-color: #27575b;
+}
+
+nav .logo {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav hr {
+  margin: auto;
+  width: 80%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+ul li {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 0 0 10px;
+  gap: 10px;
+  list-style: none;
+  color: white;
+}
+/* // featuer_system // */
+.dashboard {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.dashboard a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+.Logout {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Logout:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Logout a {
+  text-decoration: none;
+  color: white;
+}
+
+.product_setup {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product_setup:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.product_setup a {
+  text-decoration: none;
+  color: white;
+}
+
+.Sales_Process {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Sales_Process:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Sales_Process a {
+  text-decoration: none;
+  color: white;
+}
+
+.Transaction_Record {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Transaction_Record:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Transaction_Record a {
+  text-decoration: none;
+  color: white;
+}
+
+.Receipt_Generation {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Receipt_Generation:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Receipt_Generation a {
+  text-decoration: none;
+  color: white;
+}
+
+.Sale_Repord {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Sale_Repord:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Sale_Repord a {
+  text-decoration: none;
+  color: white;
+}
+
+.Customer_management {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Customer_management:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Customer_management a {
+  text-decoration: none;
+  color: white;
+}
+
+/* //..Supper_Admin..// */
+section {
+  width: 90%;
+  height: 100vh;
+}
+
+section .Supper_Admin {
+  width: 100%;
+  height: 60px;
+  background-color: #fafafa;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.Supper_Admin .Admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.Admin h3 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Admin:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.Supper_Admin img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.container {
+  display: flex;
+  gap: 25px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.form-section {
+  width: 30%;
+  background: linear-gradient(160deg, #008080, #00a0a0);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+input {
+  width: 95%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.create {
+  background-color: #007bff;
+}
+
+.back {
+  background-color: #555;
+}
+
+.create:hover {
+  background-color: #0069d9;
+}
+
+.back:hover {
+  background-color: #444;
+}
+
+.table-section {
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(160deg, #008080, #00a0a0);
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 12px;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* //...button_edit_delete...// */
+
+.action {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.action.edit {
+  background-color: #00b300;
+}
+
+.action.edit .fas{
+    color: white;
+}
+
+.action.delete {
+  background-color: #ff4d4d;
+}
+
+.action:hover {
+  opacity: 0.85;
+}

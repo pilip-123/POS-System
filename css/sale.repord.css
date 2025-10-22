@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+/* // navbarvigetion // */
+
+nav {
+  width: 15%;
+  height: 100vh;
+  background-color: #27575b;
+}
+
+nav .logo {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav hr {
+  margin: auto;
+  width: 80%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+ul li {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 0 0 10px;
+  gap: 10px;
+  list-style: none;
+  color: white;
+}
+/* // featuer_system // */
+.dashboard {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.dashboard a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+.Logout {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Logout:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Logout a{
+  text-decoration: none;
+  color: white;
+}
+
+.product_setup {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product_setup:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.product_setup a{
+  text-decoration: none;
+  color: white;
+}
+
+.Sales_Process {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Sales_Process:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Sales_Process  a{
+  text-decoration: none;
+  color: white;
+}
+
+.Transaction_Record {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Transaction_Record:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Transaction_Record a{
+  text-decoration: none;
+  color: white;
+}
+
+.Receipt_Generation {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Receipt_Generation:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Receipt_Generation a{
+  text-decoration: none;
+  color: white;
+}
+
+.Sale_Repord {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Sale_Repord:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Sale_Repord a{
+  text-decoration: none;
+  color: white;
+}
+
+.Customer_management {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Customer_management:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Customer_management a{
+  text-decoration: none;
+  color: white;
+}
+
+/* //..Supper_Admin..// */
+section {
+  width: 90%;
+  height: 100vh;
+}
+
+section .Supper_Admin {
+  width: 100%;
+  height: 60px;
+  background-color: #fafafa;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.Supper_Admin .Admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.Admin h3 {
+  font-weight: bold;
+}
+
+.Admin:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.Supper_Admin img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.report-container {
+  width: 90%;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 25px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input[type="date"] {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input[type="date"]:focus {
+  border-color: #009999;
+}
+
+.btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.filter {
+  background-color: #007bff;
+}
+
+.export {
+  background-color: #28a745;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #008080, #00a0a0);
+  color: white;
+}
+
+thead {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+

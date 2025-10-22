@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:  "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+/* // navbarvigetion // */
+
+nav {
+  width: 15%;
+  height: 100vh;
+  background-color: #27575b;
+}
+
+nav .logo {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav hr {
+  margin: auto;
+  width: 80%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+ul li {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 0 0 10px;
+  gap: 10px;
+  list-style: none;
+  color: white;
+}
+/* // featuer_system // */
+.dashboard {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.dashboard a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+.Logout {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Logout:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Logout a{
+  text-decoration: none;
+  color: white;
+}
+
+.product_setup {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product_setup:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.product_setup a{
+  text-decoration: none;
+  color: white;
+}
+
+.Sales_Process {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Sales_Process:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Sales_Process  a{
+  text-decoration: none;
+  color: white;
+}
+
+.Transaction_Record {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Transaction_Record:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Transaction_Record a{
+  text-decoration: none;
+  color: white;
+}
+
+.Receipt_Generation {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Receipt_Generation:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Receipt_Generation a{
+  text-decoration: none;
+  color: white;
+}
+
+.Sale_Repord {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Sale_Repord:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Sale_Repord a{
+  text-decoration: none;
+  color: white;
+}
+
+.Customer_management {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Customer_management:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Customer_management a{
+  text-decoration: none;
+  color: white;
+}
+
+/* ..Supper.Admin.. */
+
+section {
+  width: 90%;
+  height: 100vh;
+}
+
+section .Supper_Admin {
+  width: 100%;
+  height: 60px;
+  background-color: #fafafa;
+}
+
+.Supper_Admin .Admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.Admin h3 {
+  font-weight: bold;
+}
+
+.Admin:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.Supper_Admin img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+/* ..Table.. */
+
+.category-container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.header a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.add-btn {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(90deg, #037a72, #05998f);
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: rgba(255,255,255,0.1);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+td {
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+button.edit {
+  background: #00b4d8;
+}
+
+button.edit:hover {
+  background: #0096c7;
+}
+
+button.delete {
+  background: #f44336;
+}
+
+button.delete:hover {
+  background: #d32f2f;
+}
+
+button i {
+  font-size: 14px;
+}

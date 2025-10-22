@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+/* // navbarvigetion // */
+
+nav {
+  width: 15%;
+  height: 100vh;
+  background-color: #27575b;
+}
+
+nav .logo {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav hr {
+  margin: auto;
+  width: 80%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+ul li {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 0 0 10px;
+  gap: 10px;
+  list-style: none;
+  color: white;
+}
+/* // featuer_system // */
+.dashboard {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.dashboard a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+.Logout {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Logout:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Logout a {
+  text-decoration: none;
+  color: white;
+}
+
+.product_setup {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product_setup:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.product_setup a {
+  text-decoration: none;
+  color: white;
+}
+
+.Sales_Process {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Sales_Process:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Sales_Process a {
+  text-decoration: none;
+  color: white;
+}
+
+.Transaction_Record {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Transaction_Record:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Transaction_Record a {
+  text-decoration: none;
+  color: white;
+}
+
+.Receipt_Generation {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Receipt_Generation:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Receipt_Generation a {
+  text-decoration: none;
+  color: white;
+}
+
+.Sale_Repord {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Sale_Repord:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Sale_Repord a {
+  text-decoration: none;
+  color: white;
+}
+
+.Customer_management {
+  width: 180px;
+  height: 50px;
+  background-color: #099d83;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Customer_management:hover {
+  transform: translateY(-2px);
+  background-color: green;
+}
+
+.Customer_management a {
+  text-decoration: none;
+  color: white;
+}
+
+/* * //..Supper_Admin..// */
+section {
+  width: 90%;
+  height: 100vh;
+}
+
+.Supper_Admin {
+  width: 100%;
+  height: 60px;
+  background-color: #fafafa;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.Supper_Admin .Admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.Admin h3 {
+  font-weight: bold;
+}
+
+.Admin:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.Supper_Admin img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.container {
+  width: 95%;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #006e61, #009688);
+  border-radius: 10px;
+  padding: 30px 35px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: orange;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 8px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  outline: none;
+  transition: 0.25s;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  border-color: #009688;
+  box-shadow: 0 0 6px rgba(0, 150, 136, 0.4);
+}
+
+#main_file {
+  margin-top: 40%;
+}
+
+#file {
+  width: 95%;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.input-box {
+  width: 100%;
+  margin: 10px;
+}
+
+.full {
+    width: 98%;
+    margin: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-self: flex-end;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.create {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 35px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 35px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.create {
+  background: #0db16a;
+}
+
+.back {
+  background: #3575f6;
+}
+
+.create:hover {
+  background: #146a45;
+}
+
+.back:hover {
+  background: #2856c6;
+}

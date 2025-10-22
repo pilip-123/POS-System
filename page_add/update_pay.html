@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css_add/update_pay.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="" alt="" />
+        <h3>POS</h3>
+      </div>
+      <hr />
+      <ul>
+        <li class="dashboard">
+          <i class="fas fa-home"></i>
+          <h4><a href="../pages/dashboard.html">Dashboard</a></h4>
+        </li>
+
+        <li class="product_setup">
+          <i class="fas fa-box"></i>
+          <h4><a href="../pages/product.html">Categories</a></h4>
+        </li>
+        <li class="Sales_Process">
+          <i class="fas fa-shopping-cart"></i>
+          <h4><a href="../pages/categories.html">Product Setup</a></h4>
+        </li>
+        <li class="Transaction_Record">
+          <i class="fas fa-compact-disc"></i>
+          <h4><a href="../pages/Payment.html">Payment</a></h4>
+        </li>
+        <li class="Receipt_Generation">
+          <i class="fas fa-receipt"></i>
+          <h4><a href="../pages/Receipt.html">Receipt</a></h4>
+        </li>
+        <li class="Sale_Repord">
+          <i class="fas fa-chart-line"></i>
+          <h4><a href="../pages/sale_repord.html">Sale Repord</a></h4>
+        </li>
+        <li class="Customer_management">
+          <i class="fas fa-users"></i>
+          <h4><a href="../pages/customer.html">Customer manage</a></h4>
+        </li>
+        <hr />
+        <li class="Logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <h4><a href="../pages/logout.html">Logout</a></h4>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="Supper_Admin">
+        <div class="Admin">
+          <h3>Supper Admin</h3>
+          <img src="../images/photo_2025-09-12_20-44-48.jpg" alt="" />
+        </div>
+      </div>
+      <div class="payment-container">
+    <h2>Payment List Page</h2>
+
+    <form>
+      <div class="input-group">
+        <label for="payment">Payment Type</label>
+        <select id="payment" required>
+          <option value="">Choose Payment Type...</option>
+          <option value="cbpay">ABA Pay</option>
+          <option value="kbzpay">ACILEDA Pay</option>
+          <option value="wavepay">AMERT Pay</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" placeholder="Enter card number..." required>
+      </div>
+
+      <div class="input-group">
+        <label for="cardholder">Cardholder Name</label>
+        <input type="text" id="cardholder" placeholder="Enter cardholder name..." required>
+      </div>
+
+      <div class="btn-group">
+        <button type="submit" class="update-btn"><i class="fas fa-save"></i> Update</button>
+        <button type="button" class="back-btn"><i class="fas fa-arrow-left"></i> Back</button>
+      </div>
+    </form>
+  </div>
+    </section>
+  </body>
+</html>

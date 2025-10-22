@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="" alt="" />
+        <h3>POS</h3>
+      </div>
+      <hr />
+      <ul>
+        <li class="dashboard">
+          <i class="fas fa-home"></i>
+          <h4><a href="./dashboard.html">Dashboard</a></h4>
+        </li>
+
+        <li class="product_setup">
+          <i class="fas fa-box"></i>
+          <h4><a href="./product.html">Categories</a></h4>
+        </li>
+        <li class="Sales_Process">
+          <i class="fas fa-shopping-cart"></i>
+          <h4><a href="../pages/categories.html">Product Setup</a></h4>
+        </li>
+        <li class="Transaction_Record">
+          <i class="fas fa-compact-disc"></i>
+          <h4><a href="./Payment.html">Payment</a></h4>
+        </li>
+        <li class="Receipt_Generation">
+          <i class="fas fa-receipt"></i>
+          <h4><a href="./Receipt.html">Receipt</a></h4>
+        </li>
+        <li class="Sale_Repord">
+          <i class="fas fa-chart-line"></i>
+          <h4><a href="./sale_repord.html">Sale Repord</a></h4>
+        </li>
+        <li class="Customer_management">
+          <i class="fas fa-users"></i>
+          <h4><a href="./customer.html">Customer manage</a></h4>
+        </li>
+        <hr />
+        <li class="Logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <h4><a href="./logout.html">Logout</a></h4>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="Supper_Admin">
+        <div class="Admin">
+          <h3>Supper Admin</h3>
+          <img src="../images/photo_2025-09-12_20-44-48.jpg" alt="" />
+        </div>
+      </div>
+      <div class="contents">
+        <div class="main_cards">
+          <div class="card">
+            <div class="paragraph">
+              <p>PRODUCTS (OUT OF STOCK)</p>
+              <p>Items : 1</p>
+            </div>
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <div class="card-1">
+            <div class="paragraph">
+              <p>CATEGORIES (COUNT)</p>
+              <p>3</p>
+            </div>
+            <i class="fas fa-list"></i>
+          </div>
+          <div class="card-2">
+            <div class="paragraph">
+              <p>PAYMENT CARD</p>
+              <p>2</p>
+            </div>
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <div class="card-3">
+            <div class="paragraph">
+              <p>ADMIN ACCOUNT</p>
+              <p>3</p>
+            </div>
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <div class="card-4">
+            <div class="paragraph">
+              <p>PENDING REQUESTS</p>
+              <p>0</p>
+            </div>
+            <i class="fas fa-comment-dots"></i>
+          </div>
+          <div class="card-5">
+            <div class="paragraph">
+              <p>TOTAL (SALE)</p>
+              <p>9999</p>
+            </div>
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="card-6">
+            <div class="paragraph">
+              <p>REQUESTS SUCCESS</p>
+              <p>0</p>
+            </div>
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="card-7">
+            <div class="paragraph">
+              <p>CUSTOMER ACCOUNT</p>
+              <p>3</p>
+            </div>
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="chart">
+            <h2>Earining (past 12 months)</h2>
+            <canvas id="chart1"></canvas>
+          </div>
+          <div class="chart" id="doughnut-chart">
+            <h2>Employee</h2>
+            <canvas id="chart2"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/chart1.js"></script>
+    <script src="../JS/chart2.js"></script>
+  </body>
+</html>
