@@ -17,6 +17,10 @@ nav {
   width: 15%;
   height: 100vh;
   background-color: #27575b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 nav .logo {
@@ -85,7 +89,7 @@ ul li {
   background-color: green;
 }
 
-.Logout a{
+.Logout a {
   text-decoration: none;
   color: white;
 }
@@ -103,7 +107,7 @@ ul li {
   background-color: green;
 }
 
-.product_setup a{
+.product_setup a {
   text-decoration: none;
   color: white;
 }
@@ -121,7 +125,7 @@ ul li {
   background-color: green;
 }
 
-.Sales_Process  a{
+.Sales_Process a {
   text-decoration: none;
   color: white;
 }
@@ -139,7 +143,7 @@ ul li {
   background-color: green;
 }
 
-.Transaction_Record a{
+.Transaction_Record a {
   text-decoration: none;
   color: white;
 }
@@ -157,7 +161,7 @@ ul li {
   background-color: green;
 }
 
-.Receipt_Generation a{
+.Receipt_Generation a {
   text-decoration: none;
   color: white;
 }
@@ -175,7 +179,7 @@ ul li {
   background-color: green;
 }
 
-.Sale_Repord a{
+.Sale_Repord a {
   text-decoration: none;
   color: white;
 }
@@ -193,7 +197,7 @@ ul li {
   background-color: green;
 }
 
-.Customer_management a{
+.Customer_management a {
   text-decoration: none;
   color: white;
 }
@@ -202,6 +206,7 @@ ul li {
 section {
   width: 90%;
   height: 100vh;
+  margin-left: 230px;
 }
 
 section .Supper_Admin {
@@ -234,102 +239,137 @@ section .Supper_Admin {
   height: 50px;
   border-radius: 50px;
 }
-
-.report-container {
-  width: 90%;
-  max-width: 1000px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  padding: 25px;
+.container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 95%;
+  max-width: 1100px;
   margin: auto;
   margin-top: 20px;
 }
-
-.header {
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+.filters {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 20px;
 }
-
-.header h2 {
-  color: #333;
-  margin: 0 0 10px 0;
-}
-
-.filter-section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-input[type="date"] {
-  padding: 8px 10px;
-  border-radius: 6px;
+.filters select,
+.filters input,
+.filters button {
+  padding: 10px 14px;
+  font-size: 14px;
   border: 1px solid #ccc;
+  border-radius: 10px;
   outline: none;
-  font-size: 14px;
   transition: 0.3s;
 }
-
-input[type="date"]:focus {
-  border-color: #009999;
+.filters input:focus,
+.filters select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
-
-.btn {
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: 0.3s;
-}
-
-.filter {
-  background-color: #007bff;
-}
-
-.export {
-  background-color: #28a745;
-}
-
-.btn:hover {
-  opacity: 0.85;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
   border-radius: 10px;
   overflow: hidden;
-  background: linear-gradient(160deg, #008080, #00a0a0);
-  color: white;
 }
-
-thead {
-  background: rgba(255, 255, 255, 0.15);
+th {
+  background-color: #009879;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
 }
-
-th, td {
-  padding: 12px 15px;
-  text-align: left;
-  font-size: 14px;
+td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
 }
-
-tbody tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.05);
+tr:hover {
+  background-color: #f9f9f9;
 }
-
-tbody tr:hover {
-  background: rgba(255, 255, 255, 0.1);
+.summary {
+  text-align: right;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #333;
 }
-
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pdf-btn {
+  background: #007bff;
+}
+.pdf-btn:hover {
+  background: #0056b3;
+}
+.excel-btn {
+  background: #28a745;
+}
+.excel-btn:hover {
+  background: #1f7a38;
+}
+.search-btn {
+  background: #ff9800;
+  color: #fff;
+}
+.search-btn:hover {
+  background: #e68a00;
+}
+.file-label {
+  background: #6c63ff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.file-label:hover {
+  background: #5848d4;
+}
+input[type="file"] {
+  display: none;
+}
+.upload-preview {
+  text-align: center;
+  margin-top: 10px;
+}
+.upload-preview img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin-top: 5px;
+}
+.edit-btn {
+  background: #ffc107;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.edit-btn:hover {
+  background: #e0a800;
+}

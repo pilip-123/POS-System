@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css_add/update_pro.css" />
+    <link rel="stylesheet" href="../css/Categories.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -28,11 +28,11 @@
 
         <li class="product_setup">
           <i class="fas fa-box"></i>
-          <h4><a href="../pages/product.html">Categories </a></h4>
+          <h4><a href="../pages/Categorie.html">Categories </a></h4>
         </li>
         <li class="Sales_Process">
           <i class="fas fa-shopping-cart"></i>
-          <h4><a href="../pages/categories.html">Product Setup</a></h4>
+          <h4><a href="../pages/order.html">Order Process</a></h4>
         </li>
         <li class="Transaction_Record">
           <i class="fas fa-compact-disc"></i>
@@ -64,62 +64,33 @@
           <img src="../images/photo_2025-09-12_20-44-48.jpg" alt="" />
         </div>
       </div>
-      <div class="container">
-        <h2>Update Your Product</h2>
-        <div class="form-box">
-          <div class="left">
-            <img src="../images/apple-1.jpg" alt="Product Image" />
-            <input type="file" id="file" />
-          </div>
+      <div class="top-bar">
+        <div class="stats-box">
+          Total Products: <span id="total-products">0</span>
+        </div>
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search products..." />
+          <button id="searchBtn"><i class="fa fa-search"></i></button>
+        </div>
+        <button class="add-btn" id="addProduct">
+          <i class="fa fa-plus"></i> Add Product
+        </button>
+      </div>
 
-          <div class="right">
-            <div class="form-group">
-              <label>Category Name</label>
-              <select>
-                <option>Anniversary</option>
-                <option>Birthday</option>
-                <option>Valentine</option>
-              </select>
-            </div>
+      <div class="product-grid" id="productGrid"></div>
 
-            <div class="form-group-inline">
-              <div>
-                <label>Name</label>
-                <input type="text" value="Anni Item1" />
-              </div>
-              <div>
-                <label>Sell Price</label>
-                <input type="text" value="15600" />
-              </div>
-            </div>
-
-            <div class="form-group-inline">
-              <div>
-                <label>Purchase Price</label>
-                <input type="text" value="15000" />
-              </div>
-              <div>
-                <label>Count</label>
-                <input type="text" value="12" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label>Description</label>
-              <textarea rows="3">This is anni items</textarea>
-            </div>
-
-            <div class="btn-group">
-              <button class="btn update">
-                <i class="fas fa-sync-alt"></i> Update
-              </button>
-              <button class="btn back">
-                <i class="fas fa-arrow-left"> <a href="../pages/categories.html">Back</a></i> 
-              </button>
-            </div>
-          </div>
+      <!-- Modal -->
+      <div class="modal" id="productModal">
+        <div class="modal-content">
+          <h3 id="modalTitle">Add Product</h3>
+          <input type="text" id="prodName" placeholder="Product Name" />
+          <input type="number" id="prodPrice" placeholder="Price" />
+          <input type="file" id="prodImage" accept="image/*" />
+          <button class="save-btn" id="saveProduct">Save</button>
+          <button class="close-btn" onclick="closeModal()">Cancel</button>
         </div>
       </div>
     </section>
+    <script src="../JS/Categories.js"></script>
   </body>
 </html>

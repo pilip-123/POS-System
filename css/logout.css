@@ -1,0 +1,112 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #00c853, #007bff);
+      overflow: hidden;
+    }
+
+    .logout-box {
+      background: #ffffff;
+      padding: 50px 40px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 380px;
+      animation: fadeIn 0.6s ease;
+      transition: transform 0.3s ease;
+    }
+
+    .logout-box:hover {
+      transform: scale(1.03);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logout-box img {
+      width: 90px;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #007bff;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .btns {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: white;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn.logout {
+      background: linear-gradient(135deg, #00c853, #00e676);
+    }
+
+    .btn.logout:hover {
+      background: linear-gradient(135deg, #00b248, #00c853);
+      box-shadow: 0 0 15px rgba(0, 200, 83, 0.6);
+      transform: translateY(-2px);
+    }
+
+    .btn.cancel {
+      background: linear-gradient(135deg, #007bff, #00b0ff);
+    }
+
+    .btn.cancel a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn.cancel:hover {
+      background: linear-gradient(135deg, #0059c1, #007bff);
+      box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+      transform: translateY(-2px);
+    }
+
+    .message {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #00c853;
+      display: none;
+      font-weight: 600;
+      animation: fadeIn 0.5s ease;
+    }

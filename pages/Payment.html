@@ -28,15 +28,15 @@
 
         <li class="product_setup">
           <i class="fas fa-box"></i>
-          <h4><a href="../pages/product.html">Categories </a></h4>
+          <h4><a href="../pages/Categorie.html">Categories </a></h4>
         </li>
         <li class="Sales_Process">
           <i class="fas fa-shopping-cart"></i>
-          <h4><a href="../pages/categories.html">Product Setup</a></h4>
+          <h4><a href="../pages/order.html">Order Process</a></h4>
         </li>
         <li class="Transaction_Record">
           <i class="fas fa-compact-disc"></i>
-          <h4><a href="../pages/Payment.html">Payment</a></h4>
+          <h4><a href="../pages/Payment.html">Sale Process</a></h4>
         </li>
         <li class="Receipt_Generation">
           <i class="fas fa-receipt"></i>
@@ -64,72 +64,45 @@
           <img src="../images/photo_2025-09-12_20-44-48.jpg" alt="" />
         </div>
       </div>
-      <div class="container">
-    <div class="form-section">
-      <h3>Add Payment</h3>
-      <div class="form-group">
-        <label>Card Type</label>
-        <select>
-          <option>Choose your payment...</option>
-          <option>ABA Pay</option>
-          <option>ACILEDA Pay</option>
-          <option>AMERT Pay</option>
-        </select>
-      </div>
+     <div class="sales-container">
+    <h2>Sales Process</h2>
 
-      <div class="form-group">
-        <label>Card Number</label>
-        <input type="text" placeholder="number..." />
-      </div>
-
-      <div class="form-group">
-        <label>Cardholder Name</label>
-        <input type="text" placeholder="name..." />
-      </div>
-
-      <div class="btn-group">
-        <button class="btn create"><i class="fas fa-plus-circle"></i> Create</button>
-        <button class="btn back"><i class="fas fa-arrow-left"></i> Back</button>
-      </div>
+    <div class="products">
+      <button class="product" onclick="addProduct('Espresso', 3)">Espresso - $3</button>
+      <button class="product" onclick="addProduct('Latte', 3.5)">Latte - $3.5</button>
+      <button class="product" onclick="addProduct('Cappuccino', 4)">Cappuccino - $4</button>
+      <button class="product" onclick="addProduct('Brownie', 2.5)">Brownie - $2.5</button>
     </div>
 
-    <div class="table-section">
-      <h3>Payment List</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Invoice ID</th>
-            <th>Card Type</th>
-            <th>Card Number</th>
-            <th>Cardholder Name</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>KBZPay</td>
-            <td>23412341234123</td>
-            <td>Jin</td>
-            <td>
-              <button class="action edit"><a href="../page_add/update_pay.html"><i class="fas fa-pen"></i></a></button>
-              <button class="action delete"><i class="fas fa-trash"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>WPay</td>
-            <td>267989853025</td>
-            <td>RM</td>
-            <td>
-              <button class="action edit"><a href="../page_add/update_pay.html"><i class="fas fa-pen"></i></a></button>
-              <button class="action delete"><i class="fas fa-trash"></i></button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <table id="salesTable">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="summary" id="summary">Subtotal: $0 | Total: $0</div>
+
+    <div class="payment">
+      <label>Payment Type:</label>
+      <select id="paymentType">
+        <option value="cash">Cash</option>
+        <option value="card">Card</option>
+      </select>
+
+      <label>Cash Given:</label>
+      <input type="number" id="cashGiven" placeholder="0" min="0" step="0.01" oninput="updateChange()">
+      <div id="changeText" style="margin-top:8px;font-weight:500;"></div>
     </div>
+
+    <button class="confirm-btn" onclick="confirmSale()">Confirm Sale</button>
   </div>
     </section>
+    <script src="../JS/payment.js"></script>
   </body>
 </html>

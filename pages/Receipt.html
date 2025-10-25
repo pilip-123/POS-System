@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Receipt.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="" alt="" />
+        <h3>POS</h3>
+      </div>
+      <hr />
+      <ul>
+        <li class="dashboard">
+          <i class="fas fa-home"></i>
+          <h4><a href="./dashboard.html">Dashboard</a></h4>
+        </li>
+
+        <li class="product_setup">
+          <i class="fas fa-box"></i>
+          <h4><a href="./Categorie.html">Categories</a></h4>
+        </li>
+        <li class="Sales_Process">
+          <i class="fas fa-shopping-cart"></i>
+          <h4><a href="../pages/order.html">Order Process</a></h4>
+        </li>
+        <li class="Transaction_Record">
+          <i class="fas fa-compact-disc"></i>
+          <h4><a href="./Payment.html">Sale Process</a></h4>
+        </li>
+        <li class="Receipt_Generation">
+          <i class="fas fa-receipt"></i>
+          <h4><a href="./Receipt.html">Receipt</a></h4>
+        </li>
+        <li class="Sale_Repord">
+          <i class="fas fa-chart-line"></i>
+          <h4><a href="./sale_repord.html">Sale Repord</a></h4>
+        </li>
+        <li class="Customer_management">
+          <i class="fas fa-users"></i>
+          <h4><a href="./customer.html">Customer manage</a></h4>
+        </li>
+        <hr />
+        <li class="Logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <h4><a href="./logout.html">Logout</a></h4>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="Supper_Admin">
+        <div class="Admin">
+          <h3>Supper Admin</h3>
+          <img src="../images/photo_2025-09-12_20-44-48.jpg" alt="" />
+        </div>
+      </div>
+      <div class="receipt-card" id="receipt">
+    <div class="receipt-header">
+      <img src="../images/apple-1.jpg" alt="Store Logo" class="logo">
+      <h1>SmartPOS Store</h1>
+      <p>Cashier: <strong>John Doe</strong></p>
+      <hr>
+    </div>
+
+    <div class="receipt-body">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple Juice</td>
+            <td>2</td>
+            <td>$3.00</td>
+            <td>$6.00</td>
+          </tr>
+          <tr>
+            <td>Sandwich</td>
+            <td>1</td>
+            <td>$4.50</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td>3</td>
+            <td>$1.00</td>
+            <td>$3.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="receipt-footer">
+      <div class="total-section">
+        <p>Date: <strong>23/10/2025</strong></p>
+        <p class="total">Total: <strong>$13.50</strong></p>
+      </div>
+      <div class="button-group">
+        <button class="print" onclick="window.print()">🖨️ Print</button>
+        <button class="download">⬇️ Download PDF</button>
+      </div>
+    </div>
+  </div>
+    </section>
+  </body>
+</html>

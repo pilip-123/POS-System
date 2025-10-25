@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css_add/update_pay.css" />
+    <link rel="stylesheet" href="../css/order.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -28,11 +28,11 @@
 
         <li class="product_setup">
           <i class="fas fa-box"></i>
-          <h4><a href="../pages/product.html">Categories</a></h4>
+          <h4><a href="../pages/Categorie.html">Categories</a></h4>
         </li>
         <li class="Sales_Process">
           <i class="fas fa-shopping-cart"></i>
-          <h4><a href="../pages/categories.html">Product Setup</a></h4>
+          <h4><a href="../pages/order.html">Order Process</a></h4>
         </li>
         <li class="Transaction_Record">
           <i class="fas fa-compact-disc"></i>
@@ -64,36 +64,65 @@
           <img src="../images/photo_2025-09-12_20-44-48.jpg" alt="" />
         </div>
       </div>
-      <div class="payment-container">
-    <h2>Payment List Page</h2>
+      <div class="container">
+        <h2>☕ Customer Order Page</h2>
 
-    <form>
-      <div class="input-group">
-        <label for="payment">Payment Type</label>
-        <select id="payment" required>
-          <option value="">Choose Payment Type...</option>
-          <option value="cbpay">ABA Pay</option>
-          <option value="kbzpay">ACILEDA Pay</option>
-          <option value="wavepay">AMERT Pay</option>
-        </select>
+        <div class="customer-input">
+          <label><b>Customer Name:</b></label>
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Enter customer name"
+          />
+        </div>
+
+        <div class="product-grid" id="productList"></div>
+
+        <h3>🛒 Your Cart</h3>
+        <table id="cartTable">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Price ($)</th>
+              <th>Total ($)</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <div class="summary">
+          <b>Subtotal: $<span id="subtotal">0.00</span></b>
+        </div>
+
+        <button class="confirm-btn" id="confirmOrder">Confirm Order</button>
       </div>
 
-      <div class="input-group">
-        <label for="card-number">Card Number</label>
-        <input type="text" id="card-number" placeholder="Enter card number..." required>
+      <!-- Product View Modal -->
+      <div id="viewModal" class="modal">
+        <div class="modal-content view-card">
+          <h2 id="viewName"></h2>
+          <div class="view-img-box">
+            <img id="viewImage" alt="Product Image" />
+          </div>
+          <p id="viewPrice"></p>
+          <p class="view-desc">
+            This is your receipt preview for the selected product.
+          </p>
+          <button id="closeView" class="close-btn">Close</button>
+        </div>
       </div>
-
-      <div class="input-group">
-        <label for="cardholder">Cardholder Name</label>
-        <input type="text" id="cardholder" placeholder="Enter cardholder name..." required>
+      <!-- Receipt Modal -->
+      <div class="modal" id="receiptModal">
+        <div class="modal-content" id="receiptContent">
+          <h3>🧾 Customer Receipt</h3>
+          <div id="receiptDetails"></div>
+          <button class="print-btn" id="printReceipt">Print Receipt</button>
+          <button class="close-btn" id="closeReceipt">Close</button>
+        </div>
       </div>
-
-      <div class="btn-group">
-        <button type="submit" class="update-btn"><i class="fas fa-save"></i> Update</button>
-        <button type="button" class="back-btn"><i class="fas fa-arrow-left"></i> Back</button>
-      </div>
-    </form>
-  </div>
     </section>
+    <script src="../JS/order.js"></script>
   </body>
 </html>
